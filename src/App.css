@@ -1,38 +1,120 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Foldit:wght@100..900&family=Ga+Maamli&family=Kalnia+Glaze:wght@100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=New+Amsterdam&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+DE+Grund:wght@100..400&family=Playwrite+FR+Moderne:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.App{
+  font-family: "Playwrite France Moderne";
+  
   text-align: center;
+    background-color:#f5d0a4;
+    animation-name: example;
+    animation-duration: 4s;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  @keyframes example {
+    from {background-color: #aaa;}
+    to {background-color: #d48e8e;}
   }
+
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  
+}
+.input-form div{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+input {
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+}
+button{
+  background-color: #d48e8e;
+  width: 150px;
+  height: 50px;
+  margin-left: 42%;
+  margin-top: 30px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  animation-name: illustration;
+  animation-duration: 5s ;
+}
+@keyframes illustration {
+  from {background-color:#86ade2;}
+  to {background-color: #2609e2;}
+}
+
+
+.footer-section {
+  height: 10vh;
+  width: auto;
+  background-color:#d6c4c4;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+  font-family:'Jersey 10';
+  margin-top: -16px;
+  
+}
+.about-me,
+.contacts,
+.links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.media{
+  list-style: none;
+  display: flex;
+  justify-content:flex-start;
+  align-items: baseline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.invite-container {
+  font-family: 'Edu VIC WA NT Beginner';
+  font-weight: 900;
+  background-color:#cea3a3;
+  width:45rem ;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align:start;
+  margin: auto;
+  font-size: 1.2rem;
+  padding: 20px;
+  border: 10px solid #fff;
+  border-radius: 5px;
+  color: #000;
+  background-image: url(./utils/invite1.jpg);
+}
+.invite-container h3 {
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
+.invite-container span{
+margin-left: 75%;
+}
+.invite-wrapper {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 20px;
 }

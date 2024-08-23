@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import EventInput from './Components/EventInput';
 import './App.css';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Event Invite</h1>
+      <div className='introduction'>A birthday is not just a day to celebrate a year gone by,
+         but to embrace the potential of the upcoming year. <br />
+        It’s a day when you’re surrounded by friends and family who celebrate the fact that the world is a better place because you’re in it.</div>
+      <p>Want to send some invite, we got you covered</p>
+    <EventInput />
+    <Footer />
     </div>
   );
 }
